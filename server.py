@@ -54,19 +54,15 @@ def handle_dialog(res, req):
     if 'Иван Жарков получил двойку'.lower() in text.lower():
         res['response']['text'] = 'ахахахахахахах, Иван Жарков получил двойку по русскому'
         return
-
     if 'Иван Жарков проспорил 100 рублей'.lower() in text.lower():
         res['response']['text'] = 'хахахаха, конина проспорила 100 рублей, Может быть, он мне тоже проспорит?'
         return
-
     if 'Иван Жарков был обрызган'.lower() in text.lower():
         res['response']['text'] = 'хахахаха, Ивана Жаркова обрызгала машина водой из лужи!'
         return
-
     if 'Ивану Жаркову повезло'.lower() in text.lower():
         res['response']['text'] = 'опа, конине впервые повезло!!!'
         return
-
     else:
         res['response']['text'] = 'Иван Жарков не понял сообщения'
 
